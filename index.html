@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+    <style>
+   * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: #0b0614;
+    color: #e9d5ff;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    text-align: center;
+    padding: 60px 20px;
+    background: linear-gradient(135deg, #7c3aed, #9333ea);
+}
+
+header h1 {
+    font-size: 2.6rem;
+}
+
+header p {
+    margin-top: 10px;
+    font-size: 1.1rem;
+    opacity: 0.9;
+}
+
+/* Cards */
+.card {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 25px;
+    background: #1a102b;
+    border-radius: 14px;
+    box-shadow: 0 10px 25px rgba(124, 58, 237, 0.15);
+}
+
+/* Titles */
+h2 {
+    margin-bottom: 15px;
+    font-size: 1.6rem;
+    color: #c4b5fd;
+    border-bottom: 2px solid #7c3aed;
+    padding-bottom: 6px;
+}
+
+/* Info Grid */
+.info-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 12px;
+}
+
+/* Lists */
+.list {
+    list-style: none;
+}
+
+.list li {
+    margin-bottom: 10px;
+}
+
+/* Skill Badges */
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.skill {
+    padding: 8px 16px;
+    background: linear-gradient(135deg, #7c3aed, #9333ea);
+    border-radius: 999px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: white;
+    box-shadow: 0 5px 15px rgba(147, 51, 234, 0.4);
+}
+
+/* Projects */
+.project-card {
+    background: #0f0720;
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 15px;
+    border-left: 4px solid #7c3aed;
+    transition: transform 0.2s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-4px);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    background: #05000f;
+    font-size: 0.9rem;
+    opacity: 0.8;
+}
+
+    </style>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cejay Villanueva | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Cejay Villanueva</h1>
+        <p>BSIT Student | Aspiring Developer</p>
+    </header>
+
+    <!-- Personal Data Sheet -->
+    <section class="card">
+        <h2>Personal Data Sheet</h2>
+
+        <div class="info-grid">
+            <div><strong>Age:</strong> 20</div>
+            <div><strong>Status:</strong> Single</div>
+            <div><strong>Nationality:</strong> Filipino</div>
+        </div>
+    </section>
+
+    <!-- Contact Info -->
+    <section class="card">
+        <h2>Contact Information</h2>
+        <ul class="list">
+            <li><strong>Address:</strong> Bayanan 1, Calapan City, Oriental Mindoro</li>
+            <li><strong>Email:</strong> cejay166villanueva@gmail.com</li>
+            <li><strong>Phone:</strong> 0907 395 0096</li>
+        </ul>
+    </section>
+
+    <!-- Education -->
+    <section class="card">
+        <h2>Educational Background</h2>
+        <ul class="list">
+            <li><strong>School:</strong> St. Anthony College Calapan</li>
+            <li><strong>Course:</strong> Bachelor of Science in Information Technology (BSIT)</li>
+            <li><strong>Year Level:</strong> 2nd Year</li>
+        </ul>
+    </section>
+
+    <!-- Programming Languages -->
+<section class="card">
+    <h2>Programming Languages</h2>
+
+    <div class="skills">
+        <div class="skill">VB.NET</div>
+        <div class="skill">HTML</div>
+        <div class="skill">CSS</div>
+        <div class="skill">JavaScript</div>
+        <div class="skill">C#</div>
+    </div>
+</section>
+
+
+    <!-- Projects -->
+    <section class="card">
+        <h2>Projects</h2>
+
+        <div class="project-card">
+            <h3>POS System</h3>
+            <p>Windows Forms POS application using VB.NET and MS Access.</p>
+        </div>
+
+        <div class="project-card">
+            <h3>Mini Portfolio</h3>
+            <p>Personal portfolio built with HTML and CSS.</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 Cejay Villanueva</p>
+    </footer>
+
+</body>
+</html>
